@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>@yield('title', 'POS Counter') | ApexPOS Smart Retail</title>
+  <title>@yield('title', 'POS Counter') | POS</title>
 
   <!-- Google Fonts: Poppins & Noto Nastaliq Urdu -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +52,7 @@
       <!-- Shop Brand Title Badge -->
       <div class="d-none d-md-flex align-items-center ms-2">
         <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-2 py-1 fs-7 fw-bold">
-          <i class="ti ti-device-tablet me-1"></i>ApexPOS &bull; Smart Retail Store
+          <i class="ti ti-device-tablet me-1"></i>POS &bull; Retail Store
         </span>
       </div>
     </div>
@@ -207,8 +207,8 @@
         <i class="ti ti-device-tablet fs-4"></i>
       </div>
       <div class="logo-title">
-        <span class="fw-bold fs-6 text-dark d-block" style="line-height: 1.1;">ApexPOS</span>
-        <span class="text-muted" style="font-size: 11px;">Smart Retail Terminal</span>
+        <span class="fw-bold fs-6 text-dark d-block" style="line-height: 1.1;">POS</span>
+        <span class="text-muted" style="font-size: 11px;">Retail Terminal</span>
       </div>
     </a>
 
@@ -322,7 +322,7 @@
       <!-- Footer -->
       <footer class="text-center py-4 mt-5 text-secondary border-top small">
         <p class="mb-0">
-          <strong>ApexPOS Smart Retail</strong> &bull; Modern Point of Sale &amp; Inventory Management System
+          <strong>POS</strong> &bull; Point of Sale &amp; Inventory Management System
         </p>
       </footer>
     </div>

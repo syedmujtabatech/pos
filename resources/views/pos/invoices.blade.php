@@ -168,8 +168,8 @@
       <div class="modal-body p-3 bg-light">
         <div id="historyReceiptContent" class="p-3 bg-white border shadow-sm mx-auto font-monospace" style="font-size: 12px; color: #000; line-height: 1.35;">
           <div class="text-center mb-2">
-            <h5 class="fw-bold mb-0 text-dark">ApexPOS Store</h5>
-            <div class="small">Smart Retail &amp; Point of Sale</div>
+            <h5 class="fw-bold mb-0 text-dark">POS Store</h5>
+            <div class="small">Retail Point of Sale</div>
             <div style="font-size: 11px;">Main Commercial Market, Counter #1</div>
             <div style="font-size: 11px;">Tel: +92 300 1234567</div>
           </div>
@@ -210,7 +210,7 @@
           </div>
           <div class="text-center mt-3" style="font-size: 10px;">
             <div>Thank you for shopping with us!</div>
-            <div class="mt-1 text-muted">Powered by ApexPOS Smart Retail</div>
+            <div class="mt-1 text-muted">Powered by POS System</div>
           </div>
         </div>
       </div>

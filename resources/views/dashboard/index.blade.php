@@ -5,7 +5,7 @@
 <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 gap-3">
   <div>
     <h4 class="fw-bold mb-1 text-dark"><i class="ti ti-layout-dashboard text-primary me-2"></i> Store Dashboard</h4>
-    <p class="text-secondary small mb-0">Overview of retail counter sales, inventory stock &amp; customer khata for <strong>ApexPOS Store</strong></p>
+    <p class="text-secondary small mb-0">Overview of retail counter sales, inventory stock &amp; customer khata for <strong>POS Store</strong></p>
   </div>
   <div class="d-flex align-items-center gap-2">
     <a href="{{ route('pos.index') }}" class="btn btn-success fw-bold shadow-sm px-3">

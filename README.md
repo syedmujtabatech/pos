@@ -1,4 +1,4 @@
-# ApexPOS - Smart Retail Point of Sale & Inventory Management System
+# POS - Retail Point of Sale & Inventory Management System
 
 <p align="center">
   <img src="https://img.shields.io/badge/Laravel-11%20%2F%2012-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
 </p>
 
-**ApexPOS** is a high-speed, modern, and intuitive Point of Sale (POS) & Inventory Management system engineered for retail counters, grocery stores, supermarkets, and general merchants. Built with Laravel and Bootstrap 5, it delivers frictionless counter checkout, instant thermal receipt printing, live customer Khata (credit/udhar) tracking, and real-time inventory management with zero artificial shift roadblocks.
+**POS** is a high-speed, modern, and intuitive Point of Sale (POS) & Inventory Management system engineered for retail counters, grocery stores, supermarkets, and general merchants. Built with Laravel and Bootstrap 5, it delivers frictionless counter checkout, instant thermal receipt printing, live customer Khata (credit/udhar) tracking, and real-time inventory management with zero artificial shift roadblocks.
 
 ---
 
@@ -56,8 +56,8 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/syedmujtabatech/apex-pos.git
-   cd apex-pos
+   git clone https://github.com/syedmujtabatech/pos.git
+   cd pos
    ```
 
 2. **Install Composer dependencies:**

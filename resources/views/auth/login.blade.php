@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login | ApexPOS Smart Retail</title>
+  <title>Login | POS System</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
@@ -40,8 +40,8 @@
       <div class="d-inline-flex align-items-center justify-content-center p-3 bg-success text-white rounded-circle shadow-sm mb-3">
         <i class="ti ti-device-tablet fs-1"></i>
       </div>
-      <h3 class="fw-bold mb-1 text-dark">ApexPOS</h3>
-      <p class="text-muted small mb-0">Smart Retail &amp; Point of Sale Counter</p>
+      <h3 class="fw-bold mb-1 text-dark">POS</h3>
+      <p class="text-muted small mb-0">Retail Point of Sale Counter</p>
     </div>
 
     @if(session('success'))

@@ -347,7 +347,7 @@
           <!-- Footer Message -->
           <div class="text-center" style="font-size: 10px;">
             <div>{{ $settings['footer_note'] }}</div>
-            <div class="mt-1 text-muted">Powered by ApexPOS Smart Retail</div>
+            <div class="mt-1 text-muted">Powered by POS System</div>
             <div class="mt-2 fw-bold text-center" style="letter-spacing: 2px;">*** THANK YOU ***</div>
           </div>
         </div>
@@ -452,7 +452,7 @@
   // Products Data Loaded from Server
   const ALL_PRODUCTS = @json($products);
   let CART = [];
-  let PARKED_SALES = JSON.parse(localStorage.getItem('apexpos_parked_sales') || '[]');
+  let PARKED_SALES = JSON.parse(localStorage.getItem('pos_parked_sales') || '[]');
 
   document.addEventListener('DOMContentLoaded', () => {
     updateParkedBadge();
@@ -747,7 +747,7 @@
     };
 
     PARKED_SALES.push(parkedItem);
-    localStorage.setItem('apexpos_parked_sales', JSON.stringify(PARKED_SALES));
+    localStorage.setItem('pos_parked_sales', JSON.stringify(PARKED_SALES));
 
     CART = [];
     document.getElementById('discountInput').value = 0;
@@ -791,7 +791,7 @@
     }
 
     const item = PARKED_SALES.splice(index, 1)[0];
-    localStorage.setItem('apexpos_parked_sales', JSON.stringify(PARKED_SALES));
+    localStorage.setItem('pos_parked_sales', JSON.stringify(PARKED_SALES));
 
     CART = item.cart;
     document.getElementById('customerSelect').value = item.customer_id;
