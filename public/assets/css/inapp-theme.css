@@ -1,0 +1,271 @@
+/* InApp Free Inventory Admin Dashboard Theme Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bs-primary: #E66239;
+    --bs-primary-rgb: 230, 98, 57;
+    --bs-link-color: #E66239;
+    --bs-link-hover-color: #c74d28;
+    --inapp-sidebar-width: 250px;
+    --inapp-sidebar-collapsed: 65px;
+    --inapp-topbar-height: 60px;
+}
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f8f9fa;
+    color: #262626;
+    margin: 0;
+    padding: 0;
+}
+
+/* Primary Color Overrides */
+.btn-primary {
+    background-color: #E66239 !important;
+    border-color: #E66239 !important;
+    color: #ffffff !important;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: #ce522d !important;
+    border-color: #ce522d !important;
+    color: #ffffff !important;
+}
+.btn-outline-primary {
+    color: #E66239 !important;
+    border-color: #E66239 !important;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+    background-color: #E66239 !important;
+    color: #ffffff !important;
+}
+.text-primary {
+    color: #E66239 !important;
+}
+.bg-primary {
+    background-color: #E66239 !important;
+}
+.bg-primary-subtle, .bg-primary.bg-opacity-10 {
+    background-color: rgba(230, 98, 57, 0.1) !important;
+    color: #E66239 !important;
+}
+.border-primary {
+    border-color: #E66239 !important;
+}
+.badge.bg-primary {
+    background-color: #E66239 !important;
+}
+
+/* Overlay for Mobile */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(2px);
+    display: none;
+    z-index: 1040;
+}
+.overlay.show {
+    display: block;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: var(--inapp-sidebar-width);
+    background: #ffffff;
+    border-right: 1px solid #e5e5e5;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: var(--inapp-topbar-height);
+    z-index: 1045;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 4px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+    background: #d4d4d4;
+    border-radius: 4px;
+}
+
+.sidebar .logo-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: var(--inapp-topbar-height);
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-bottom: 1px solid #e5e5e5;
+    text-decoration: none;
+}
+
+.sidebar .logo-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #171717;
+    margin-left: 10px;
+    letter-spacing: -0.2px;
+}
+.sidebar .logo-subtitle {
+    font-size: 10px;
+    color: #E66239;
+    font-weight: 600;
+    display: block;
+    line-height: 1;
+}
+
+.sidebar .nav-header {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #a3a3a3;
+    letter-spacing: 0.5px;
+    padding: 12px 18px 4px 18px;
+    margin: 0;
+}
+
+.sidebar .nav-link {
+    color: #404040;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    font-size: 13.5px;
+    font-weight: 500;
+    gap: 12px;
+    white-space: nowrap;
+    margin: 2px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.sidebar .nav-link:hover {
+    color: #E66239;
+    background-color: rgba(230, 98, 57, 0.08);
+}
+
+.sidebar .nav-link.active {
+    color: #E66239;
+    background-color: rgba(230, 98, 57, 0.12);
+    font-weight: 600;
+}
+
+.sidebar .nav-link i.ti {
+    font-size: 19px;
+    flex-shrink: 0;
+}
+
+/* Sidebar Collapsed State */
+.sidebar.collapsed {
+    width: var(--inapp-sidebar-collapsed);
+}
+.sidebar.collapsed .nav-link {
+    margin: 2px 6px;
+    padding: 10px 14px;
+    justify-content: center;
+}
+.sidebar.collapsed .nav-text,
+.sidebar.collapsed .logo-title,
+.sidebar.collapsed .nav-header {
+    display: none !important;
+}
+
+/* TOPBAR */
+.topbar {
+    height: var(--inapp-topbar-height);
+    margin-left: var(--inapp-sidebar-width);
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1030;
+}
+.topbar.full {
+    margin-left: var(--inapp-sidebar-collapsed);
+}
+
+/* MAIN CONTENT */
+.content {
+    margin-left: var(--inapp-sidebar-width);
+    padding: 24px 28px;
+    min-height: calc(100vh - var(--inapp-topbar-height));
+    margin-top: var(--inapp-topbar-height);
+    transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.content.full {
+    margin-left: var(--inapp-sidebar-collapsed);
+}
+
+/* RESPONSIVE BREAKPOINT */
+@media (max-width: 992px) {
+    .sidebar {
+        left: calc(-1 * var(--inapp-sidebar-width));
+    }
+    .sidebar.mobile-show {
+        left: 0;
+    }
+    .topbar {
+        margin-left: 0 !important;
+    }
+    .content {
+        margin-left: 0 !important;
+        padding: 16px;
+    }
+}
+
+/* InApp UI Components */
+.icon-shape {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+.icon-sm { width: 32px; height: 32px; }
+.icon-md { width: 44px; height: 44px; }
+.icon-lg { width: 56px; height: 56px; }
+
+.avatar {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.avatar-xs { width: 24px; height: 24px; }
+.avatar-sm { width: 32px; height: 32px; }
+.avatar-md { width: 42px; height: 42px; }
+.avatar-lg { width: 56px; height: 56px; }
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.border-dashed {
+    border-style: dashed !important;
+}
+
+.card {
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.card-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.badge {
+    padding: 5px 10px;
+    font-weight: 500;
+    border-radius: 6px;
+}
