@@ -69,8 +69,8 @@ class DatabaseSeeder extends Seeder
         $defaultPassword = Hash::make('password');
 
         $admin = User::firstOrCreate(['username' => 'admin'], [
-            'name' => 'Haji Muhammad Noor',
-            'email' => 'admin@alnoortraders.pk',
+            'name' => 'Store Admin',
+            'email' => 'admin@pos.com',
             'password' => $defaultPassword,
             'role_id' => $ownerRole->id,
             'phone' => '0300-1112233',
@@ -78,8 +78,8 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $manager = User::firstOrCreate(['username' => 'manager'], [
-            'name' => 'Tariq Mehmood',
-            'email' => 'manager@alnoortraders.pk',
+            'name' => 'Tariq Mehmood (Manager)',
+            'email' => 'manager@pos.com',
             'password' => $defaultPassword,
             'role_id' => $managerRole->id,
             'phone' => '0301-2223344',
@@ -87,8 +87,8 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $storekeeper = User::firstOrCreate(['username' => 'storekeeper'], [
-            'name' => 'Bilal Ahmed',
-            'email' => 'store@alnoortraders.pk',
+            'name' => 'Bilal Ahmed (Store)',
+            'email' => 'store@pos.com',
             'password' => $defaultPassword,
             'role_id' => $storeKeeperRole->id,
             'phone' => '0302-3334455',
@@ -96,8 +96,8 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $cashier = User::firstOrCreate(['username' => 'cashier'], [
-            'name' => 'Hamza Ali',
-            'email' => 'cashier@alnoortraders.pk',
+            'name' => 'Hamza Ali (Cashier)',
+            'email' => 'cashier@pos.com',
             'password' => $defaultPassword,
             'role_id' => $cashierRole->id,
             'phone' => '0303-4445566',
@@ -106,7 +106,7 @@ class DatabaseSeeder extends Seeder
 
         $salesman1 = User::firstOrCreate(['username' => 'salesman1'], [
             'name' => 'Imran Khan (Salesman 1)',
-            'email' => 'imran@alnoortraders.pk',
+            'email' => 'imran@pos.com',
             'password' => $defaultPassword,
             'role_id' => $salesmanRole->id,
             'phone' => '0304-5556677',
@@ -115,7 +115,7 @@ class DatabaseSeeder extends Seeder
 
         $salesman2 = User::firstOrCreate(['username' => 'salesman2'], [
             'name' => 'Kamran Akmal (Salesman 2)',
-            'email' => 'kamran@alnoortraders.pk',
+            'email' => 'kamran@pos.com',
             'password' => $defaultPassword,
             'role_id' => $salesmanRole->id,
             'phone' => '0305-6667788',
@@ -124,7 +124,7 @@ class DatabaseSeeder extends Seeder
 
         $salesman3 = User::firstOrCreate(['username' => 'salesman3'], [
             'name' => 'Zeeshan Siddiqui (Salesman 3)',
-            'email' => 'zeeshan@alnoortraders.pk',
+            'email' => 'zeeshan@pos.com',
             'password' => $defaultPassword,
             'role_id' => $salesmanRole->id,
             'phone' => '0306-7778899',
@@ -133,7 +133,7 @@ class DatabaseSeeder extends Seeder
 
         $purchaser = User::firstOrCreate(['username' => 'purchaser'], [
             'name' => 'Usman Ghani',
-            'email' => 'purchaser@alnoortraders.pk',
+            'email' => 'purchaser@pos.com',
             'password' => $defaultPassword,
             'role_id' => $purchaseRole->id,
             'phone' => '0307-8889900',
@@ -142,7 +142,7 @@ class DatabaseSeeder extends Seeder
 
         $accountant = User::firstOrCreate(['username' => 'accountant'], [
             'name' => 'Farhan Qureshi',
-            'email' => 'accountant@alnoortraders.pk',
+            'email' => 'accountant@pos.com',
             'password' => $defaultPassword,
             'role_id' => $accountantRole->id,
             'phone' => '0308-9990011',
@@ -151,7 +151,7 @@ class DatabaseSeeder extends Seeder
 
         $accountant2 = User::firstOrCreate(['username' => 'accountant2'], [
             'name' => 'Muhammad Bilal (Accountant)',
-            'email' => 'bilal.accounts@alnoortraders.pk',
+            'email' => 'bilal.accounts@pos.com',
             'password' => $defaultPassword,
             'role_id' => $accountantRole->id,
             'phone' => '0309-1112233',
@@ -160,12 +160,12 @@ class DatabaseSeeder extends Seeder
 
         // 3. Settings
         $settings = [
-            'company_name' => 'Al-Noor Traders',
-            'company_name_ur' => 'النور ٹریڈرز',
-            'tagline' => 'Wholesale & Retail General Store & FMCG Distribution',
-            'address' => 'Plot 42, Wholesale Market, Jodia Bazaar, Karachi, Pakistan',
-            'phone' => '+92 21 32410000 / 0300-1112233',
-            'email' => 'info@alnoortraders.pk',
+            'company_name' => 'POS Store',
+            'company_name_ur' => 'پی او ایس',
+            'tagline' => 'Retail General Store & FMCG Supermarket',
+            'address' => 'Main Commercial Market, Counter #1, Pakistan',
+            'phone' => '+92 300 1234567',
+            'email' => 'support@pos.com',
             'ntn' => '42301-9876543-1',
             'strn' => '327787654321',
             'currency' => 'PKR',

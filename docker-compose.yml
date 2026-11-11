@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  pos:
+    build: .
+    container_name: pos-system
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - pos-data:/app/database
+    environment:
+      - APP_NAME=POS
+      - APP_ENV=production
+      - APP_DEBUG=false
+      - DB_CONNECTION=sqlite
+
+volumes:
+  pos-data:
