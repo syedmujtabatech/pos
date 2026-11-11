@@ -1,7 +1,7 @@
 @echo off
-title ApexPOS - Smart Retail Point of Sale
+title POS - Retail Point of Sale
 echo ========================================================
-echo Starting ApexPOS Retail Counter Server...
+echo Starting POS Retail Counter Server...
 echo ========================================================
 echo Opening browser at http://127.0.0.1:8000/pos ...
 timeout /t 2 /nobreak >nul
